@@ -1,0 +1,3 @@
+[submodule "kindlib"]
+	path = kindlib
+	url = git@github.com:condekind/kindlib.git

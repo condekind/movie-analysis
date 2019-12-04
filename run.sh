@@ -1,0 +1,33 @@
+
+# setup python 3.6 env
+command -v pipenv &>/dev/null         || exit 1
+pipenv --venv || pipenv --python 3.6  || exit 1
+
+# math, statistics, data science
+pipenv install "Cython"               || exit 1
+pipenv install "numpy"                || exit 1
+pipenv install "scipy"                || exit 1
+pipenv install "pandas"               || exit 1
+pipenv install "scikit-learn"         || exit 1
+
+# notebook, plots
+pipenv install "matplotlib"           || exit 1
+pipenv install "jupyter"              || exit 1
+pipenv install "notebook"             || exit 1
+pipenv install "ipywidgets"           || exit 1
+pipenv install "plotly"               || exit 1
+
+# pomegranate for hidden markov models
+pipenv install "joblib"               || exit 1
+pipenv install "pomegranate"          || exit 1
+
+# jupyter themes
+pipenv install "jupyterthemes" && pipenv run \
+jt -t monokai -fs 10 -tf sourcesans -tfs 11 -nf source -nfs 12
+
+pipenv run jupyter-notebook
+
+# reset theme
+command -v pipenv &>/dev/null  && jt -r
+
+exit
