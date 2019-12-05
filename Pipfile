@@ -19,6 +19,7 @@ plotly = "*"
 joblib = "*"
 pomegranate = "*"
 jupyterthemes = "*"
+unidecode = "*"
 
 [requires]
 python_version = "3.6"
