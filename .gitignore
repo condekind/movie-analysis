@@ -1,3 +1,5 @@
 *.pyx
 *.o
 *.so
+data/credits.pkl
+data/ratings.pkl

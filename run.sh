@@ -1,3 +1,6 @@
+echo "If you already ran this script, you don't need to do so again"
+echo "Start the environment by running:  $ pipenv run jupyter-notebook"
+echo "Or start a sandboxed session with: $ pipenv shell"
 
 # setup python 3.6 env
 command -v pipenv &>/dev/null         || exit 1
