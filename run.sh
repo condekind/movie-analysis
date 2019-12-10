@@ -16,6 +16,7 @@ pipenv install "scikit-learn"         || exit 1
 # notebook, plots
 pipenv install "unidecode"            || exit 1
 pipenv install "matplotlib"           || exit 1
+pipenv install "colorspacious"        || exit 1
 pipenv install "jupyter"              || exit 1
 pipenv install "notebook"             || exit 1
 pipenv install "ipywidgets"           || exit 1
